@@ -1,0 +1,69 @@
+.DronesOverview {
+  position: absolute;
+  z-index: 130;
+  top: 0;
+  right: 0;
+  padding: 30px 30px 0 0;
+  min-width: 90px;
+  color: #dfe3ff;
+  font-size: 20px;
+  text-shadow: 0 1px 6px #00adff;
+}
+
+.DronesOverview-header {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 45px;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.DronesItem {
+  width: 100%;
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.DronesItem::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.DronesItem-sim::before {
+  background: yellow;
+}
+
+.DronesItem-video::before {
+  background: red;
+}
+
+.DronesItem-repair_station::before {
+  background: rgba(255,255,255,0.65);
+}
+
+.DronesItem-beacon::before {
+  background: #3e98c7;
+}
+
+.DronesItem-energy_station::before {
+  background: green;
+}
+
+.DronesItem-count {
+  margin-right: 15px;
+  width: 30px;
+  text-align: right;
+}
+
+.DronesItem-type {
+    text-align: right;
+}

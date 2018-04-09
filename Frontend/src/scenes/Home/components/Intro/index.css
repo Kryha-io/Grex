@@ -1,0 +1,31 @@
+.Intro {
+  position: absolute;
+  z-index: 120;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #060c0e;
+}
+
+.Intro .Logo-name {
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 64px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+.Intro .Logo-slogan {
+  font-weight: 400;
+  font-size: 28px;
+  margin-top: 0px;
+}

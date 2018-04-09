@@ -1,0 +1,37 @@
+{
+  "name": "grex-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "history": "^4.7.2",
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.5",
+    "normalize.css": "^8.0.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.1",
+    "react-circular-progressbar": "^0.8.0",
+    "react-dom": "^16.3.1",
+    "react-google-maps": "^9.4.5",
+    "react-immutable-render-mixin": "^0.9.7",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "react-scripts": "1.1.4",
+    "recompose": "^0.26.0",
+    "redux": "^3.7.2",
+    "reselect": "^3.0.1",
+    "websocket": "^1.0.25",
+    "ws": "^5.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "isomorphic-ws": "^4.0.0",
+    "react-router-dom": "^4.2.2",
+    "react-webcam": "^0.4.1"
+  }
+}

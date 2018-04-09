@@ -1,0 +1,41 @@
+.DroneVideo{
+    background-color: transparent;
+    position: fixed;
+    z-index: 130;
+    bottom: 30px;
+    right: 30px;
+    width: 600px;
+}
+
+.DroneVideo-show {
+    background: #000;
+    height: 480px;
+}
+
+.DroneVideo .video {}
+
+button {
+    border: 0;
+    background: none;
+    outline: 0;
+}
+
+.DroneVideo button {
+    position: absolute;
+    z-index: 130;
+    color: #FFF;
+    top: 0;
+    font-size: 44px;
+    z-index: 200;
+    padding: 40px 30px;
+}
+
+.DroneVideo .show {
+    bottom: 0;
+    right: 0;
+    top: auto;
+}
+
+.DroneVideo .close {
+    right: 0;
+}

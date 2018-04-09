@@ -1,0 +1,20 @@
+{
+  "name": "grex-backend",
+  "version": "1.0.0",
+  "dependencies": {
+    "blob-util": "^1.3.0",
+    "bigchaindb-orm": "^1.0.4",
+    "blob-util": "^1.3.0",
+    "body-parser": "^1.18.2",
+    "chalk": "^2.3.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "morgan": "^1.9.0",
+    "node-fetch": "^2.1.2",
+    "node-jumping-night": "git+https://github.com/taniTk/node-jumping-night.git",
+    "request": "^2.85.0",
+    "socket.io": "^2.1.0",
+    "ws": "^5.1.1"
+  }
+}

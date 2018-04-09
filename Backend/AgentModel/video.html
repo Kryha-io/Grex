@@ -1,0 +1,43 @@
+<html>
+<body>
+
+<video id="v" autoplay> </video>
+
+<script src='https://localhost/socket.io/socket.io.js'></script>
+<script>
+window.URL = window.URL || window.webkitURL;
+window.MediaSource = window.MediaSource || window.WebKitMediaSource;
+
+if(!!! window.MediaSource)
+{
+    alert('MediaSource API is not available!');
+    return;
+}
+
+var mediaSource = new MediaSource();
+var video = document.getElementById('v');
+
+video.src = window.URL.createObjectURL(mediaSource);
+
+mediaSource.addEventListener('webkitsourceopen', function(e)
+{
+    var sourceBuffer = mediaSource.addSourceBuffer('video/webm; codecs="vorbis,vp8"');
+    var socket = io.connect('http://localhost:8080');
+
+    if(socket)
+        console.log('Library retrieved!');
+
+    socket.emit('VIDEO_STREAM_REQ','REQUEST');
+
+    socket.on('VS', function (data)
+    {
+        console.log(data);
+        sourceBuffer.append(data);
+    });
+});
+
+</script>
+
+
+</body>
+</html>

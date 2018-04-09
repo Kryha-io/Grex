@@ -1,0 +1,52 @@
+.DroneInfo {
+  position: absolute;
+  z-index: 130;
+  bottom: 30px;
+  left: 30px;
+  color: #fff;
+}
+
+.DroneInfo-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.DroneInfo-inner-left {
+  width: 120px;
+  margin-right: 30px;
+}
+
+.DroneInfo-header {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 36px;
+  color: #dfe3ff;
+  text-shadow: 0 1px 6px #00adff;
+}
+
+.DroneInfo-id {
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 1px 6px #1b69ff;
+}
+
+.DroneInfo-location {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.DroneInfo-location > div {
+    margin-top: 5px;
+}
+
+.DroneInfo-location .label {
+    margin-right: 15px;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: rgba(255,255,255,0.1);
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  font-size: 26px;
+}

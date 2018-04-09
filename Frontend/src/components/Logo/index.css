@@ -1,0 +1,72 @@
+a{
+    text-decoration: none;
+}
+
+.cls-1 {
+  fill:none;
+  stroke:#fff;
+  stroke-miterlimit:10;
+  stroke-width:6px;
+}
+
+.Logo-name {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-left: 15px;
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+
+.mt-1{
+    margin-top: 30px;
+}
+
+.Logo-slogan {
+  display: block;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+}
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 10s linear forwards;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

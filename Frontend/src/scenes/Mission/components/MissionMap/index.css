@@ -1,0 +1,158 @@
+.gm-style img[src="https://maps.gstatic.com/mapfiles/api-3/images/google_white5.png"],
+.gm-style img[src="https://maps.gstatic.com/mapfiles/api-3/images/google_white5_hdpi.png"] {
+  display: none;
+}
+
+.Pulse {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background: red;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+
+}
+
+.Pulse:hover {
+  background: lightgray;
+}
+
+.Pulse-sim {
+  background: yellow;
+  animation: pulse-sim 2s infinite;
+}
+
+.Pulse-detected {
+    background: orange;
+    animation: pulse-detected 1s infinite;
+}
+
+.Pulse-video {
+  background: red;
+  animation: pulse-video 2s infinite;
+}
+
+.Pulse-beacon {
+    background: #3e98c7;
+    animation: pulse-beacon 2s infinite;
+}
+
+.Pulse-energy_station {
+    background: green;
+    animation: pulse-energy_station 2s infinite;
+}
+
+.Pulse-repair_station {
+    background: rgba(255,255,255,0.65);
+    animation: pulse-repair_station 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 red;
+    box-shadow: 0 0 0 0 red;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 35px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 35px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+
+@keyframes pulse-sim {
+  0% {
+    -moz-box-shadow: 0 0 0 0 yellow;
+    box-shadow: 0 0 0 0 yellow;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 35px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 35px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+
+@keyframes pulse-detected {
+  0% {
+    -moz-box-shadow: 0 0 0 0 orange;
+    box-shadow: 0 0 0 0 orange;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 35px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 35px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+
+@keyframes pulse-video {
+  0% {
+    -moz-box-shadow: 0 0 0 0 red;
+    box-shadow: 0 0 0 0 red;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 150px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 150px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+
+@keyframes pulse-beacon {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #3e98c7;
+    box-shadow: 0 0 0 0 #3e98c7;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 120px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 120px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+
+@keyframes pulse-energy_station {
+  0% {
+    -moz-box-shadow: 0 0 0 0 green;
+    box-shadow: 0 0 0 0 green;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 35px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 35px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+
+@keyframes pulse-repair_station {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255,255,255,0.65);
+    box-shadow: 0 0 0 0 rgba(255,255,255,0.65);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 35px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 35px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+
+.gmnoprint, .gmnoscreen, .gm-style-cc {
+  display: none!important;
+}

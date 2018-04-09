@@ -1,0 +1,44 @@
+.Category {
+    width: 50%;
+    height: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c0e;
+    overflow: hidden;
+}
+
+.Category-title {
+    position: absolute;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 3;
+}
+
+.Overlay {
+    position: absolute;
+    display:block;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.18);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.grow > .Category-title{
+    transition: all .4s ease-in-out;
+}
+.grow:hover > .Category-title {
+    transform: scale(1.08);
+}
+
+.grow:hover > .Overlay {
+    display: none !important;
+}
+
+.Gifs{
+    height: 100%;
+    position: relative;
+}
